@@ -25,7 +25,7 @@ export const CreatePost = () => {
     } catch (error) {
       console.log(error)
     }
-  })
+  }) 
 
   return (
     <div className={s.postForm}>

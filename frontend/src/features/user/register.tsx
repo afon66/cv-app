@@ -3,6 +3,8 @@ import { useRegisterMutation } from "../../app/services/userApi"
 import { Input } from "../../components/input"
 import { Link, useNavigate } from "react-router-dom"
 import { toast } from "react-toastify"
+import './index.module.scss'
+import s from './index.module.scss'
 
 type Register = {
   email: string
@@ -27,6 +29,8 @@ export const Register = () => {
 
   const [register, { isLoading }] = useRegisterMutation()
   const navigate = useNavigate()
+
+  const passError = errors?.password?.message as string
 
   const submit = async (data: Register) => {
     try {

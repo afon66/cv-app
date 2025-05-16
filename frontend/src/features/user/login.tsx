@@ -6,7 +6,7 @@ import {
 } from "../../app/services/userApi"
 import { Link, useNavigate } from "react-router-dom"
 import { toast } from "react-toastify"
-import { useAppSelector } from "../../app/hooks"
+import './index.module.scss'
 
 type Login = {
   email: string

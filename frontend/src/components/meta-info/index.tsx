@@ -4,7 +4,7 @@ import s from "./index.module.scss"
 
 type Props = {
   count: number
-  Icon: IconType
+  Icon: IconType 
 }
 
 export const MetaInfo: React.FC<Props> = ({ count, Icon }) => {

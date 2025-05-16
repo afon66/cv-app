@@ -20,7 +20,7 @@ export const CreateComment = () => {
     control,
   } = useForm()
 
-  const error = errors?.post?.message as string
+  const error = errors?.comment?.message as string
 
   const onSubmit = handleSubmit(async data => {
     try {
@@ -49,7 +49,7 @@ export const CreateComment = () => {
             ></textarea>
           )}
         />
-        {error && <div>{error}</div>}
+        {error && <div className={s.commentError}>{error}</div>}
         <div>
           <Button type="primary" htmlType="submit">
             <span>

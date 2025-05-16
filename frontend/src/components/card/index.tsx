@@ -58,7 +58,7 @@ export const Card: FC<Props> = ({
   const currentUser = useAppSelector(selectCurrent)
   const { id: idParams } = useParams()
 
-  const refetchPosts = async () => {
+  const refetchPosts = async () => { 
     switch (cardFor) {
       case "post":
         await getAllPosts().unwrap()

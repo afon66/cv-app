@@ -4,11 +4,11 @@
 
   .avatarCard {
     flex: 1;
-    border: 1px solid var(--border-background);
     border-radius: 8px;
     padding: 10px;
     text-align: center;
     background-color: var(--card-background);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 
     img {
       max-width: 100%;
@@ -31,7 +31,7 @@
 
   .infoCard {
     flex: 3;
-    border: 1px solid var(--border-background);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     padding: 10px;
     background-color: var(--card-background);

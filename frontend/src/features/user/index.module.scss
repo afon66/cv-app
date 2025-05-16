@@ -1,0 +1,14 @@
+a {
+  color: rgb(160, 160, 208);
+
+  &:hover {
+    color: rgb(97, 97, 210);
+  }
+}
+
+.errorName {
+    color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

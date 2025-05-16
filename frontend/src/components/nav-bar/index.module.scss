@@ -1,8 +1,8 @@
 .menuContainer {
-  border: 1px solid var(--border-background);
   padding: 8px;
   border-radius: 8px;
   background-color: var(--card-background);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 
   .menu {
     border-radius: 8px;

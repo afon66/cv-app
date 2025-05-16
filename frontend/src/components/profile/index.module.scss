@@ -1,8 +1,8 @@
 .profileCard {
   padding: 10px;
-  border: 1px solid var(--border-background);
   border-radius: 10px;
   background-color: var(--card-background);
+   box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
 
   .avatar {
     height: 300px;
