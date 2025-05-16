@@ -19,6 +19,11 @@ app.use(express.json());
 app.use('/api', router)
 app.use('/uploads', express.static('uploads'))
 
+// Тестовый рут — проверка работы сервера
+app.get('/', (req, res) => {
+  res.json({ message: 'Server is running' });
+});
+
 mongoose.connect(mongoURI)
   .then(() => console.log('MongoDB connected at port ' + port))
   .catch(err => console.error(err));
